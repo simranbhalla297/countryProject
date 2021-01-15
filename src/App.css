@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .navbar {
   justify-content: space-between;
@@ -169,6 +169,7 @@ p {
   .card-component {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
   }
   .card-wrapper {
     width: 90%;
