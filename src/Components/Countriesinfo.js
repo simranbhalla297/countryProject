@@ -65,14 +65,14 @@ function Countriesinfo({ countriesData, value, parentCallback, country }) {
                 <div className="img-container">
                   <img src={listItem.flag} alt={listItem.flag} />
                 </div>
-                <div className="text-container">
+                <div
+                  className="text-container"
+                  onClick={() => getCountryDescription(listItem)}
+                >
                   <h4>{listItem.name}</h4>
                   <p>Population : {listItem.population}</p>
                   <p>Region : {listItem.region}</p>
                   <p>Capital : {listItem.capital}</p>
-                  <button onClick={() => getCountryDescription(listItem)}>
-                    View more
-                  </button>
                 </div>
               </div>
             )
