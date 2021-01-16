@@ -61,7 +61,7 @@ function Countriesinfo({ countriesData, value, parentCallback, country }) {
           return (
             (listItem.region === selectedCountry ||
               selectedCountry === "All") && (
-              <div className={value ? "card-wrapper" : "darkCard"} key={_id}>
+              <div className="card-wrapper" key={_id}>
                 <div className="img-container">
                   <img src={listItem.flag} alt={listItem.flag} />
                 </div>
