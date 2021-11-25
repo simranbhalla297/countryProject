@@ -21,7 +21,6 @@ function Countriesinfo({ countriesData, value, parentCallback, country }) {
     localStorage.setItem("data", JSON.stringify(data));
     history.push("/information");
     console.log(data);
-    <h1></h1>;
   }
 
   return (

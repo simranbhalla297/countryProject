@@ -22,9 +22,9 @@ function App() {
   // countries data
   useEffect(() => {
     const fetchData = async () => {
-      var apiurl = `https://restcountries.eu/rest/v2/name/${searchValue}`;
+      var apiurl = `https://restcountries.com/v2/name/${searchValue}`;
       if (searchValue === "") {
-        apiurl = "https://restcountries.eu/rest/v2/all";
+        apiurl = "https://restcountries.com/v2/all";
       }
       let response = await fetch(apiurl);
       if (response.ok) {
